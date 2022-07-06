@@ -1,0 +1,182 @@
+/*
+    Roboto Font
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*
+    Main part
+*/
+
+:root{
+    --background-color: #F0F2F5;
+    --font-color: #1c1e21;
+    --white-color: #fff;
+    --border-color: #dddcdc;
+    --font-color-placeholder: #8e919e;
+    --font-color-placeholder-focus: #dedfe2;
+    --blue-button: #1877f2;
+    --blue-dark-button: #166FE5;
+    --blue-light: #5893e1;
+    --send-button-green: #42b72a;
+    --send-button-green-dark: #36A420;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+
+.container-principal{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 4.5rem;
+    padding: 0 6.5rem;
+}
+
+img{
+    width: 19rem;
+}
+
+.logo-info-fb{
+    padding-top: 6.5rem;
+}
+
+.logo-text{
+    font-size: 1.7rem;
+    margin-top: -0.7rem;
+    margin-left: 1.6rem;
+    color: var(--font-color);
+}
+.form-login-fb-complete{
+    padding-left: 5rem;
+    padding-right: 3rem;
+    padding-top: 3.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login-fb{
+    display: flex;
+    background-color: var(--white-color);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 1.2rem 2rem 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white-color);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    color: var(--font-color);
+}
+
+input::placeholder{
+    color: var(--font-color-placeholder);
+}
+
+input::placeholder:focus{
+    color: red;
+}
+
+input:focus{
+    border: 1px solid var(--blue-button);
+    box-shadow: 0 0 4px var(--blue-light);
+    caret-color: var(--blue-button);
+}
+
+.below-paragraph{
+    font-size: 0.9rem;
+    color: var(--font-color);
+    margin-top: 2rem;
+    line-height: 1.2rem;
+}
+.below-paragraph > a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 700;
+}
+
+.below-paragraph > a:hover{
+    text-decoration: underline;
+}
+
+.iniciar-sesion{
+    width: 100%;
+    margin-top: 5px;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--blue-button);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.iniciar-sesion:hover{
+    background-color: var(--blue-dark-button);
+}
+
+.forgot-password{
+    background-color: var(--white-color);
+    color: var(--blue-button);
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-top: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+}
+.forgot-password:hover{
+    text-decoration: underline;
+}
+
+hr{
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+.button-create{
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 2px 20px;
+    cursor: pointer;
+    outline: none;
+    color: var(--white-color);
+    background-color: var(--send-button-green);
+}
+
+.button-create:hover{
+    background-color: var(--send-button-green-dark);
+}
